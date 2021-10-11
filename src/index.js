@@ -1,19 +1,22 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-function Greeting(){
-  return (
-    <div>
-      <Person/>
-      <Message/>
+import './index.css';
+import App from './App';
 
-    </div>
-  );
-}
+// function Greeting(){
+//   return (
+//     <div>
+//       <Person/>
+//       <Message/>
 
-const Person = ()=> <h2>John Doe</h2>
-const Message = () => {
-  return <p>This is my message. Thank you very much</p>
-}
+//     </div>
+//   );
+// }
 
-ReactDom.render(<Greeting/>, document.getElementById('root'))
+// const Person = ()=> <h2>John Doe</h2>
+// const Message = () => {
+//   return <p>This is my message. Thank you very much</p>
+// }
+
+ReactDom.render(<App/>, document.getElementById('root'))
